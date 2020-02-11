@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% if err %}
+  <div class="alert alert-danger" role="alert">{{err}}</div><br/>
+  {% endif %}
+  <form method="get">
+    <div class="form-group">
+      <label for="sqlArea">SQL:</label>
+      <textarea class="form-control" id="sqlArea" name="query" rows="3">{{query}}</textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Proveď</button>
+  </form>
+  {% if data %}
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        {% for x in cursor.description %}<th>{{x.0}}</th>{% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in data %}
+      <tr>
+        {% for x in row %}<th>{{x}}</th>{% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% elif not err %}
+  <div class="alert alert-success" role="alert">v pořádku</div><br/>
+  {% endif %}
+{% endblock %}
