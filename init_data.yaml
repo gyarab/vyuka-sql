@@ -1,0 +1,254 @@
+- model: sql.battle
+  pk: 1
+  fields:
+    name: Guadalcanal
+    date: 1942-11-15
+- model: sql.battle
+  pk: 2
+  fields:
+    name: North Atlantic
+    date: 1941-05-25
+- model: sql.battle
+  pk: 3
+  fields:
+    name: North Cape
+    date: 1943-12-26
+- model: sql.battle
+  pk: 4
+  fields:
+    name: Surigao Strait
+    date: 1944-10-25
+- model: sql.shipclass
+  pk: 1
+  fields:
+    name: Bismarck
+    typ: bb
+    country: Germany
+    numGuns: 8
+    bore: 15.0
+    displacement: 42000
+- model: sql.shipclass
+  pk: 2
+  fields:
+    name: Iowa
+    typ: bb
+    country: USA
+    numGuns: 9
+    bore: 16.0
+    displacement: 46000
+- model: sql.shipclass
+  pk: 3
+  fields:
+    name: Kongo
+    typ: bc
+    country: Japan
+    numGuns: 8
+    bore: 14.0
+    displacement: 32000
+- model: sql.shipclass
+  pk: 4
+  fields:
+    name: North Carolina
+    typ: bb
+    country: USA
+    numGuns: 12
+    bore: 16.0
+    displacement: 37000
+- model: sql.shipclass
+  pk: 5
+  fields:
+    name: Renown
+    typ: bc
+    country: Gt.Britain
+    numGuns: 6
+    bore: 15.0
+    displacement: 32000
+- model: sql.shipclass
+  pk: 6
+  fields:
+    name: Revenge
+    typ: bb
+    country: Gt.Britain
+    numGuns: 8
+    bore: 15.0
+    displacement: 29000
+- model: sql.shipclass
+  pk: 7
+  fields:
+    name: Tennessee
+    typ: bb
+    country: USA
+    numGuns: 12
+    bore: 14.0
+    displacement: 32000
+- model: sql.shipclass
+  pk: 8
+  fields:
+    name: Yamato
+    typ: bb
+    country: Japan
+    numGuns: 9
+    bore: 18.0
+    displacement: 65000
+- model: sql.ship
+  pk: 1
+  fields:
+    name: California
+    cls: 7
+    launched: 1921
+- model: sql.ship
+  pk: 2
+  fields:
+    name: Haruna
+    cls: 3
+    launched: 1916
+- model: sql.ship
+  pk: 3
+  fields:
+    name: Hiei
+    cls: 3
+    launched: 1914
+- model: sql.ship
+  pk: 4
+  fields:
+    name: Iowa
+    cls: 2
+    launched: 1943
+- model: sql.ship
+  pk: 5
+  fields:
+    name: Kirishima
+    cls: 3
+    launched: 1915
+- model: sql.ship
+  pk: 6
+  fields:
+    name: Kongo
+    cls: 3
+    launched: 1913
+- model: sql.ship
+  pk: 7
+  fields:
+    name: Missouri
+    cls: 2
+    launched: 1944
+- model: sql.ship
+  pk: 8
+  fields:
+    name: Musashi
+    cls: 8
+    launched: 1942
+- model: sql.ship
+  pk: 9
+  fields:
+    name: New Jersey
+    cls: 2
+    launched: 1943
+- model: sql.ship
+  pk: 10
+  fields:
+    name: North Carolina
+    cls: 4
+    launched: 1941
+- model: sql.ship
+  pk: 11
+  fields:
+    name: Ramillies
+    cls: 6
+    launched: 1917
+- model: sql.ship
+  pk: 12
+  fields:
+    name: Renown
+    cls: 5
+    launched: 1916
+- model: sql.ship
+  pk: 13
+  fields:
+    name: Repulse
+    cls: 5
+    launched: 1916
+- model: sql.ship
+  pk: 14
+  fields:
+    name: Resolution
+    cls: 5
+    launched: 1916
+- model: sql.ship
+  pk: 15
+  fields:
+    name: Revenge
+    cls: 6
+    launched: 1916
+- model: sql.ship
+  pk: 16
+  fields:
+    name: Royal Oak
+    cls: 6
+    launched: 1916
+- model: sql.ship
+  pk: 17
+  fields:
+    name: Royal Sovereign
+    cls: 6
+    launched: 1916
+- model: sql.ship
+  pk: 18
+  fields:
+    name: Tennessee
+    cls: 7
+    launched: 1920
+- model: sql.ship
+  pk: 19
+  fields:
+    name: Washington
+    cls: 4
+    launched: 1941
+- model: sql.ship
+  pk: 20
+  fields:
+    name: Wisconsin
+    cls: 2
+    launched: 1944
+- model: sql.ship
+  pk: 21
+  fields:
+    name: Yamato
+    cls: 8
+    launched: 1941
+- model: sql.ship
+  pk: 22
+  fields:
+    name: South Dakota
+    cls: 4
+    launched: 1941
+- model: sql.outcome
+  pk: 1
+  fields:
+    ship: 1
+    battle: 4
+    outcome: OK
+- model: sql.outcome
+  pk: 2
+  fields:
+    ship: 5
+    battle: 1
+    outcome: sunk
+- model: sql.outcome
+  pk: 3
+  fields:
+    ship: 18
+    battle: 4
+    outcome: OK
+- model: sql.outcome
+  pk: 4
+  fields:
+    ship: 19
+    battle: 1
+    outcome: OK
+- model: sql.outcome
+  pk: 5
+  fields:
+    ship: 1
+    battle: 1
+    outcome: damaged
